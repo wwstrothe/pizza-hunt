@@ -59,6 +59,7 @@ const handlePizzaSubmit = (event) => {
     .then((response) => response.json())
     .then((postResponse) => {
       console.log(postResponse);
+      location.reload();
     })
     .catch((err) => {
       console.log(err);
